@@ -13,7 +13,7 @@ dependencies:
       - azureml-monitoring==0.1.0a18
       - inference-schema==1.0.2
       - inference-schema[numpy-support]==1.0.2
-      - sktime
+      - sktime==0.3.0
       - joblib
 channels:
   - conda-forge

@@ -10,7 +10,7 @@ dependencies:
   - pip:
       - azureml-defaults==1.1.5
       - azureml-dataprep[pandas,fuse]==1.4.0
-      - sktime
+      - sktime==0.3.0
       - joblib
 channels:
   - conda-forge
