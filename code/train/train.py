@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from azureml.core import Run
+from azureml.core import Run, Dataset
 
 from joblib import dump
 from sklearn.metrics import accuracy_score
@@ -50,7 +50,7 @@ def parse_args():
 
 def main(args):
     # Load and wrangle data
-    dataset = run.input_datasets["rawdata"]
+    dataset = Dataset.get_by_name(run.experiment.workspace, "processed_json")
     raw_data_df = dataset.to_pandas_dataframe()
 
     processed_data_df = prepare_dataframe(
