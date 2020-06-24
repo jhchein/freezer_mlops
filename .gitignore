@@ -343,3 +343,7 @@ ASALocalRun/
 healthchecksdb
 
 config.json
+
+# Local files
+outputs
+local_conda_environment.yml
