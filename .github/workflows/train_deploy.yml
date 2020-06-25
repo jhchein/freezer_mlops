@@ -6,6 +6,8 @@ on:
       - master
     # paths:
     #   - 'code/*'
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   train:
     runs-on: ubuntu-latest
